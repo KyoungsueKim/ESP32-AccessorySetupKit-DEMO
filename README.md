@@ -1,7 +1,7 @@
 # ESP32 AccessorySetupKit DEMO
 
 ## ESP32 BLE Dice Accessory with AccessorySetupKit Integration
-
+![image](https://github.com/KyoungsueKim/ESP32-AccessorySetupKit-DEMO/blob/main/image.jpeg)
 This repository contains the ESP32 firmware code for a BLE (Bluetooth Low Energy) dice accessory that integrates with
 iOS applications using Apple’s AccessorySetupKit, introduced in iOS 18 during WWDC 2024. This project allows you to test
 Apple’s sample app with actual hardware, providing a hands-on experience of how AccessorySetupKit facilitates seamless
@@ -75,33 +75,33 @@ You can download the iOS sample app source code from Apple’s official document
 
 1. Download the Sample App
 
-- Download Source
-  Code: [Authorizing a Bluetooth Accessory to Share a Dice Roll](https://developer.apple.com/documentation/accessorysetupkit/authorizing-a-bluetooth-accessory-to-share-a-dice-roll)
+  - Download Source
+    Code: [Authorizing a Bluetooth Accessory to Share a Dice Roll](https://developer.apple.com/documentation/accessorysetupkit/authorizing-a-bluetooth-accessory-to-share-a-dice-roll)
 
 2. Open the Project in Xcode
 
-- Unzip the downloaded project.
-- Open the .xcodeproj file in Xcode on your Mac.
+  - Unzip the downloaded project.
+  - Open the .xcodeproj file in Xcode on your Mac.
 
 3. Run the Two Targets on Separate Devices
 
-- ASKSampleAccessory Target: Simulates a Bluetooth dice accessory.
-- ASKSample Target: Demonstrates how to use AccessorySetupKit to onboard the accessory.
+  - ASKSampleAccessory Target: Simulates a Bluetooth dice accessory.
+  - ASKSample Target: Demonstrates how to use AccessorySetupKit to onboard the accessory.
 
 4. Deploy the Apps
 
-- Connect your two iOS devices running iOS 18 or later.
-- Build and run the ASKSampleAccessory app on one device.
-- Build and run the ASKSample app on the other device.
+  - Connect your two iOS devices running iOS 18 or later.
+  - Build and run the ASKSampleAccessory app on one device.
+  - Build and run the ASKSample app on the other device.
 
 5. Using the Applications
 
-- On the device running ASKSampleAccessory, tap “Power On” to start advertising as a BLE accessory.
-- On the device running ASKSample, tap “Add Dice” and follow the prompts to authorize the accessory using the
-  AccessorySetupKit UI.
-- After authorization, the accessory is ready for use in the app.
-- You can now receive dice roll results in ASKSample whenever you roll the dice in ASKSampleAccessory or via the ESP32
-  hardware.
+  - On the device running ASKSampleAccessory, tap “Power On” to start advertising as a BLE accessory.
+  - On the device running ASKSample, tap “Add Dice” and follow the prompts to authorize the accessory using the
+    AccessorySetupKit UI.
+  - After authorization, the accessory is ready for use in the app.
+  - You can now receive dice roll results in ASKSample whenever you roll the dice in ASKSampleAccessory or via the ESP32
+    hardware.
 
 ### Testing with ESP32 Hardware
 
