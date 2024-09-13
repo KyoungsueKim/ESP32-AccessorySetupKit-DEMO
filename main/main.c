@@ -306,6 +306,10 @@ static void gatts_event_handler(esp_gatts_cb_event_t event,
                                     param->write.trans_id, ESP_GATT_OK, NULL);
         break;
 
+    case ESP_GATTS_CONF_EVT:
+        ESP_LOGI(TAG, "GATT_CONF_EVT, status %d", param->conf.status);
+        break;
+
     default:
         ESP_LOGW(TAG, "Unhandled GATT event: %d", event);
         break;
